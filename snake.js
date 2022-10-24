@@ -91,7 +91,7 @@ for(let y = 1; y < numOfRows; y++) {
 }
 }
 
-var isRunning = true
+var isRunning = false
 
 function gameover() {
     isRunning = false
@@ -130,25 +130,26 @@ function handleKeyboardMove(e) {
 }
 
 function start() {
+    console.log("asdf")
     isRunning = true
     var menu =  document.getElementById("menu")
-  menu.style = "display: none"
-  snake = [
-    {x: 2, y: 1},
-    {x: 1, y: 1}
-]
-xSpeed = 1
-ySpeed = 0
+    menu.style = "display: none"
+    snake = [
+        {x: 2, y: 1},
+        {x: 1, y: 1}
+    ]
+    xSpeed = 1
+    ySpeed = 0
 
-xApple= 4
-yApple= 4
-  
-document.onkeydown =  handleKeyboardMove
+    xApple= 4
+    yApple= 4
+    
+    document.onkeydown =  handleKeyboardMove
 
-gameloop()
+    gameloop()
 }
 
-document. onkeydown = function() {
+document.onkeydown = function() {
     start()
 }
 
@@ -175,9 +176,11 @@ function handleTouchMove(evt) {
     if(!isRunning) {
         start()
     }
+    
     if ( ! xDown || ! yDown ) {
         return;
     }
+
 
     var xUp = evt.touches[0].clientX;                                    
     var yUp = evt.touches[0].clientY;
