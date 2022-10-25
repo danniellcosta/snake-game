@@ -191,18 +191,18 @@ function handleTouchMove(evt) {
     if ( Math.abs( xDiff ) > Math.abs( yDiff ) ) {/*most significant*/
         if ( xDiff > 0 ) {
             /* right swipe */ 
-            moveRigth()
+            moveLeft()
         } else {
             /* left swipe */
-            moveLeft()
+            moveRigth()
         }                       
     } else {
         if ( yDiff > 0 ) {
             /* down swipe */ 
-            moveDown()
+            moveUp()
         } else { 
             /* up swipe */
-            moveUp()
+            moveDown()
         }                                                                 
     }
     /* reset values */
