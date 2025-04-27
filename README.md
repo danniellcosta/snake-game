@@ -34,4 +34,4 @@ Um clássico jogo da cobrinha implementado com JavaScript puro e HTML5 Canvas, c
 - Tailwind CSS (para estilos básicos)
 
 ## Jogar
-Você pode jogar o jogo através deste link: [Snake Game](https://snake-game-tau-five.vercel.app/) {:target="_blank"}
+Você pode jogar o jogo através deste link: <a href="https://snake-game-tau-five.vercel.app/" target="_blank">Snake Game</a>
